@@ -59,13 +59,13 @@ Currently, I am mapping paired FASTQ files in the following procedure.
 
 ## Step 4. Report 
 
-1. Copy /tview/make-region_tview_script.py to the directory, and run it with
+1. Copy /report/make-region_tview_script.py to the directory, and run it with
   designed crRNA FASTA file. It will generate bash commands to run samtools tview.
-  * /tview/make-region_tview_script.py <crRNA FASTA> > run.sh
+  * /report/make-region_tview_script.py <crRNA FASTA> > run.sh
   * Check the location of BAM files and the referene FASTA file.
 
 2. Run the script produced by the above step. It will generate tview files for each 
   crRNA target site.
   * bash run.sh
 
-3. Make the summary report by running /tview/make-somatic-tview-report.txt. 
+3. Make the summary report by running /report/make-somatic-tview-report.txt. 
